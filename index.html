@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Pilot - Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+    <div class="branding">
+      <h1>Task Pilot</h1>
+      <p>Your AI-powered scheduling assistant</p>
+    </div>
+    <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Task Manager</div>
+    <div class="stats">
+      <span>⭐ Points:<span id="points">10</span></span>
+      <span>📈 Level:<span id="level">1</span></span>
+      <span>🔥 Streak:<span id="streak">1</span></span>
+      <span>🏅 Badges:<span id="badges">None</span></span>
+    </div>
+  </nav>
+  </div>
+</header>
+
+    <!-- App Container -->
+    <div class="app-container">
+        <!-- Add Task Form -->
+        <div class="task-form">
+            <h2>Add a New Task</h2>
+            <form id="taskForm">
+                <input type="text" id="task" placeholder="Task (e.g. Finish project report)" required>
+                <input type="date" id="deadline" required>
+                <select id="urgencyTask" required>
+                    <option value="Low">Low Urgency</option>
+                    <option value="Medium">Medium Urgency</option>
+                    <option value="High">High Urgency</option>
+                </select>
+                <select id="importanceTask" required>
+                    <option value="Low">Low Importance</option>
+                    <option value="Medium">Medium Importance</option>
+                    <option value="High">High Importance</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+<div id="task-list" class="task-list"></div>
+
+        <!-- Task List -->
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <h3><marquee>Created By SATHWIK GOWDA</marquee></h3>
+    <center><u style="color:red";>Thank you &hearts;</u></center>
+</body>
+</html>
+
+ 
